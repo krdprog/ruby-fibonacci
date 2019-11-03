@@ -1,12 +1,10 @@
 # Fibonacci
-
-fibo = [0, 1]
-
-i = 0
-
-while i < 100
-  puts fibo[i]
-  fibo_next = fibo[i] + fibo[i.next]
-  fibo << fibo_next
-  i += 1
+def fib(n)
+  a, b = 0, 1
+  while a < n
+    print "#{a} "
+    a, b = b, a+b
+  end
 end
+
+fib(1000)
